@@ -113,7 +113,13 @@ h1,h2{text-align:center;}
   <p style="text-align:center">Select Chapter</p>
 
   <button class="chapter-btn" onclick="startChapter('ch1')">
-    Chapter 1 – Concepts of Agad Tantra (62+ MCQs)
+    Chapter 1 – Concepts of Agad Tantra
+  </button>
+  <button class="chapter-btn" onclick="startChapter('ch2')">
+    Chapter 2 – Management of Poisoning
+  </button>
+  <button class="chapter-btn" onclick="startChapter('ch3')">
+    Chapter 3 
   </button>
 
   <p style="text-align:center;color:#94a3b8">
@@ -198,7 +204,161 @@ const chapters = {
 { q:"सिर पर कम्पन किस विष वेग की चिकित्सा है?", options:["सप्तम","पंचम","प्रथम","चतुर्थ"], answer:"A"},
 { q:"इनमें से कौन सा लक्षण विषपीडित का नहीं है?", options:["अशुद्ध मूत्र, काले वर्ण का मल","वमन","उष्ण अशु ज्वरता","कोई नहीं"], answer:"D"},
 { q:"विष का कार्य होता है?", options:["जल","वायु","अग्नि","पृथ्वी"], answer:"C"},
-  ]
+  ],
+  ch2: [
+ { q:"Poison may be detected by analysis before death is-", options:["Vomit","Urine","Food","All"], answer:"D"},
+ { q:"Poison may be detected by analysis after death is-", options:["Contents of intestine","Liver","Kidney","All"], answer:"D"},
+ { q:"आचार्य चरक ने विष चिकित्सा के कितने उपाय बताये हैं?", options:["13","12","24","20"], answer:"C"},
+ { q:"अस्त्र बन्धन उपयोगी होता है।", options:["मर्म गत विष में","शाखा गत विष में","मांस गत विष में","संधि गत विष में"], answer:"B"},
+ { q:"अस्त्र बन्धन करते समय कितने अंगुल ऊपर करना चाहिए?", options:["4","8","24","12"], answer:"A"},
+ { q:"उत्कर्तन करना निषिद्ध है।", options:["मांस स्थान छोड़ कर","संधि स्थान छोड़ कर","मर्म स्थान छोड़ कर","B एवं C"], answer:"D"},
+ { q:"अवपीडक कर्म करना चाहिए।", options:["राजमार्ग सन्धियों में","मध्य सन्धियों में","सन्धि स्थान पर","मांस में"], answer:"B"},
+ { q:"विष चिकित्सा में बहन कर्म का प्रयोग करते हैं।", options:["तृतीय","प्रथम","सप्तम","पंचम"], answer:"D"},
+ { q:"विष चिकित्सा में रक्तमोक्षण चिकित्सा है।", options:["रक्तमोक्षण","वमन","अवगाहन","अग्निकर्म"], answer:"C"},
+ { q:"किस आचार्य ने अवगाहन चिकित्सा में नाव में बैठने के लिए कहा है जिसमें नाव में 6 अंगुल जल भरा होता है।", options:["भावप्रकाश","चरक","सुश्रुत","काश्यप"], answer:"A"},
+ { q:"रक्तमोक्षण निषिद्ध है।", options:["शिशु","गर्भावस्था","वृद्ध","सभी में"], answer:"D"},
+ { q:"विषाक्त अवस्था में किस विधि से शोधन करना चाहिए।", options:["श्रृंग","जलौका","प्रच्छान","सभी में"], answer:"D"},
+ { q:"रक्तमोक्षण से दुर्बल रक्त का स्त्राव न होने पर किन औषधियों का प्रयोग करना चाहिए।", options:["कुटजादि चूर्ण","हरिद्रा चूर्ण","ऐलादी चूर्ण","सभी में"], answer:"A"},
+ { q:"दंश के स्थान पर शोथ हो तो रक्तमोक्षण करना चाहिए।", options:["श्रृंग","जलौका","प्रच्छान","A और B"], answer:"D"},
+ { q:"यदि विष का पान कर लिया गया हो तो विष के ........ वेग में या साथ विषपीडित की अवस्था में वमन करवाना चाहिए।", options:["5th वेग","7th वेग","3rd वेग","6th वेग"], answer:"B"},
+ { q:"शीत मृत्यु में, उष्ण की अवस्था में या कफ गुण की प्रधानता में विरेचनादि कर्मों में कौन सा कर्म अधिक उपयुक्त है।", options:["उपधान","विरेचन","वमन","अवगाहन"], answer:"C"},
+ { q:"स्थावर विषपान किये रोगी में .......... चिकित्सा कर्म करना चाहिए।", options:["वमन","विरेचन","प्रशमन","अस्त्र बन्धन"], answer:"A"},
+ { q:"मण्डली में दशर के ........ वेग में वमन करवाना चाहिए।", options:["3rd","2nd","5th","4th"], answer:"A"},
+ { q:"विष पक्वाशय में स्थानान्तरित हो तो रोगी कोठे (पेट) में दर्द, दाह, आध्मान, मन्द-मूत्र अवस्था हो तो मनुष्य को ........ देना चाहिए।", options:["वमन","विरेचन","प्रशमन","अस्त्र बन्धन"], answer:"B"},
+ { q:"विष की अवस्था में सिर पर कपाल आकार का चौरा लगाना उत्तम कर्म है।", options:["प्रशमन","लेप","उपधान","अस्त्र बन्धन"], answer:"C"},
+ { q:"विषाक्त अवस्था में औषधियों के सूक्ष्म चूर्ण को नासिका में डालने को किस कर्म कहते हैं।", options:["प्रशमन","लेप","उपधान","वमन"], answer:"A"},
+ { q:"उदरशूल के लिए प्रयोग करना चाहिए।", options:["मधु, शुंठी, दुग्ध","गैरिक भस्म, गोमूत्र रस","इक्षुरस, कांजी, अजमोद रस","सभी"], answer:"D"},
+ { q:"प्रतिविष औषधियों के प्रयोग करते हैं।", options:["5th वेग के बाद","7th वेग से पहले","दोनों सही","दोनों गलत"], answer:"C"},
+ { q:"आचार्य चरक ने विष के ........ वेग में स्नेहस्रावण की क्रिया करने का निर्देश दिया है।", options:["प्रथम","द्वितीय","तृतीय","चतुर्थ"], answer:"D"},
+ { q:"विष की असाध्य अवस्था का अंतिम उपचार क्या है।", options:["प्रशमन","प्रतिविष","नस्य","लेप"], answer:"B"},
+ { q:"मूलसंहितायां अगद का वर्णन किस आचार्य ने किया है।", options:["चरक","भावप्रकाश","सुश्रुत","वाग्भट"], answer:"A"},
+ { q:"विष दंश स्थान में कितनी मात्रा रक्त करता है।", options:["200","150","100","500"], answer:"C"},
+ { q:"प्रशमन नस्य में सबसे उपयुक्त कर्म क्या है।", options:["भारंगी","करंज","पलाश","कटुतैल"], answer:"D"},
+ { q:"Emesis is contraindicated in-", options:["Unconscious patient","Corrosives","Pregnancy and children","All"], answer:"D"},
+ { q:"Activated charcoal is what type of antidote.", options:["Physical","Chemical","Physiological","Universal"], answer:"A"},
+ { q:"These are the substances which prevent the absorption of poison by forming a layer on the mucous membrane of stomach wall.", options:["BAL","Chemical","EDTA","Demulcents"], answer:"D"},
+ { q:"BAL is a", options:["Physical antidote","Chemical antidote","Chelating agent","Universal antidote"], answer:"C"},
+ { q:"BAL is used in poisoning of", options:["Mercury","Copper","Iron","Both A and B"], answer:"D"},
+ { q:"Milk of magnesia is", options:["Physical antidote","Chemical antidote","Chelating agent","Universal antidote"], answer:"B"},
+ { q:"The composition of universal antidote is", options:[
+   "Powdered charcoal 2 parts + Magnesium oxide 1 part + Tannic acid 1 part",
+   "Powdered charcoal 1 part + Magnesium oxide 2 part + Tannic acid 1 part",
+   "Powdered charcoal 2 parts + Magnesium oxide 1 part + Tannic acid 2 part",
+   "All are in equal amount"
+ ], answer:"A"},
+ { q:"KMNO₄ is used as poisoning of", options:["Aconitum","Ahifen","Atropine","All"], answer:"D"},
+ { q:"For morphine antidote is", options:["Diazepam","KMNO₄","Naloxone","All"], answer:"C"},
+ { q:"Drinking of milk and water is contraindicated in poisoning of", options:["Food poisoning","Phosphorus and strong acid","Alcohol poisoning","All"], answer:"B"},
+ { q:"EDTA is contraindicated in", options:["Brain damage","Lungs damage","Liver damage","Kidney damage"], answer:"D"},
+ { q:"In acute cyanide poisoning, amyl nitrate is given by one of the following route.", options:["Oral","Intravenous","Inhalation","Intramuscular"], answer:"D"},
+ { q:"Which of the following is not the method of hastening the removal of absorbed poison from the body.", options:["Peritoneal dialysis","Haemodialysis","Irrigation of bowel","Haemoperfusion"], answer:"C"},
+ { q:"Which agent is used for stomach wash in the removal of unabsorbed organic plant poison.", options:["Potassium Permanganate","Normal saline water","Magnesium sulphate","Activated charcoal"], answer:"A"},
+ { q:"यदि व्यक्ति के विरुद्ध रोगी की मृत्यु हो जाए, तो एक चिकित्सक कौन सी धारा में सुरक्षित है।", options:["IPC 32","IPC 92","IPC 90","IPC 82"], answer:"B"},
+ { q:"विषाक्तता के मामलों में रिकॉर्ड .......... साल के समय तक सुरक्षित रखना चाहिए।", options:["3","5","7","10"], answer:"A"}
+],
+ch3: [
+ { q:"विषाक्त अन्न की अग्नि परीक्षा है।", options:["चट्ट प्रदाह","मृदुकोष प्रतिक्रिया","तीव्र धूम","सभी"], answer:"D"},
+ { q:"विषाक्त अन्न की अन्य जीवों पर परीक्षा का सही मिलान है।", options:[
+   "चकोर – मत्स्यना",
+   "कोयल – हरित कौआ",
+   "क्रौंच पक्षी – स्वर विकार",
+   "बंदर – अक्षि वैराग्य"
+ ], answer:"D"},
+ { q:"अन्न की परीक्षा में पांच भौतिक परीक्षा का वर्णन किया है।", options:["चरक ने","सुश्रुत ने","वाग्भट ने","काश्यप ने"], answer:"B"},
+ { q:"विषमिश्रित दधि में कौनसे वर्ण की रेखा दिखती है।", options:["हरित","नील","श्याम","पीत"], answer:"C"},
+ { q:"विषमिश्रित दुग्ध में कौनसे वर्ण की रेखा दिखती है।", options:["ताम्र","हरित","पीत","नील"], answer:"B"},
+ { q:"‘वैष्ये नख सदृशाङ्गुलकृते दृष्टि हृदययोश्च बिन्दु शीतरन्ध्रावेधि ज्वलन’ लक्षण है।", options:[
+   "आचार्यचरक विष के",
+   "सुश्रुत विष के",
+   "भावप्रकाश विष के",
+   "सभी के"
+ ], answer:"A"},
+ { q:"विष दूषित जल के प्रतिकार के लिए इनमें से किस भस्म को जल में छोड़ते हैं।", options:[
+   "धातु, अश्वगंधा, विजयसार",
+   "पाषाण, पाताल, निर्गुंडी",
+   "मोरटा, अमलतास",
+   "सभी"
+ ], answer:"D"},
+ { q:"Argemone seed is used as adulterants in-", options:["Ghee","Honey","Oil","Milk"], answer:"C"},
+ { q:"Dried papaya seed is used as adulterants in-", options:["Black pepper","Sweets","Cereals","Chili powder"], answer:"A"},
+ { q:"Metanil yellow is used as adulterants in-", options:["Milk","Coffee","Sweets","Honey"], answer:"B"},
+ { q:"............. used as food flavour enhancer causes severe headache, nausea and occasionally chest tightness.", options:[
+   "Mono-sodium glutamate (MSG)",
+   "Saccharin",
+   "Sodium meta bisulphate",
+   "Sulphur dioxide"
+ ], answer:"A"},
+ { q:"For detection of poisonous mushrooms test conducted is-", options:[
+   "Trinders test","Urotropine test","Meixner test","None of the above"
+ ], answer:"C"},
+ { q:"Reinsch test is conducted for detection of poisoning of-", options:[
+   "Heavy metals","Mushrooms","Alkalis","Acids"
+ ], answer:"A"},
+ { q:"Mandelin's reagent test is for detection of poisoning of-", options:[
+   "Heavy metals","Mushrooms","Strychnine","Calotropis"
+ ], answer:"C"},
+ { q:"For detection of Opiates test conducted is-", options:[
+   "Vitalis test","Marques reagent test","Gutziet test","Trinders test"
+ ], answer:"B"},
+ { q:"Test for tobacco is-", options:[
+   "Mayer's test","Vitalis test","Gutziet test","None of the above"
+ ], answer:"C"},
+ { q:"Test for Aconitum is-", options:[
+   "Reinsch test","Vitalis test","Patel's test","None of the above"
+ ], answer:"A"},
+ { q:"Ethanol", options:[
+   "Dichromate test","Reinsch test","Ferric chloride test","Patel's test"
+ ], answer:"A"},
+ { q:"“सहसादेवीनामुपयोगोबलवर्धनम्” विषाक्तता का लक्षण किस आचार्य ने बताया है।", options:[
+   "सुश्रुत","भावप्रकाश","चरक","वाग्भट"
+ ], answer:"C"},
+ { q:"Tobacco is .............. poison.", options:[
+   "Corrosive","Somniferous","Cardiac","Spinal"
+ ], answer:"C"},
+ { q:"बाजार मांस में शुद्ध और अशुद्ध का भेद है।", options:[
+   "मांस विष","अग्नि विष","काल विष","देश विष"
+ ], answer:"A"},
+ { q:"किस आचार्य ने 18 प्रकार के विषाक्त आहारों का वर्णन किया है।", options:[
+   "सुश्रुत","चरक","काश्यप","वाग्भट"
+ ], answer:"B"},
+ { q:"मोर का मांस यदि एरंड काष्ठ की शलाका से भुना हुआ हो तो ............. विष है।", options:[
+   "कर्म","अवस्था","संस्कार","वीर्य"
+ ], answer:"C"},
+ { q:"रात्रि में दही खाना है।", options:[
+   "क्रम विष","विधि विष","संयोग विष","सभी"
+ ], answer:"A"},
+ { q:"परिहार विष है।", options:[
+   "क्रम विष","वात प्रकोप आहार","अकाले खाना","बराह मांस के बाद गर्म जल से स्नान"
+ ], answer:"D"},
+ { q:"घृत आदि देने के बाद शेष आहार पदार्थों देना निषिद्ध है।", options:[
+   "कर्म","उपचार","संस्कार","वीर्य"
+ ], answer:"B"},
+ { q:"अष्टमहादोष का कारण है।", options:[
+   "दूषी विष","स्थावर विष","विषाक्त आहार","सभी"
+ ], answer:"C"},
+ { q:"सम मात्रा में शहद एवं पानी, सम मात्रा में शहद एवं घृत का सेवन है।", options:[
+   "मात्रा विष","सम विष","विषाक्त विष","काल विष"
+ ], answer:"A"},
+ { q:"विषाक्त आहार सेवन जनित रोगों में चिकित्सा है।", options:[
+   "वमन-विरचन","शमन","हितसेवन","सभी"
+ ], answer:"D"},
+ { q:"कालकर्म के बाद दस दिन तक क्या शुद्ध रखना है।", options:[
+   "मल विष","वात विष","विषाक्त विष","वीर्य विष"
+ ], answer:"B"},
+ { q:"Most common food poisoning is-", options:[
+   "E. Coli","Botulism","Staphylococci","Salmonellae"
+ ], answer:"D"},
+ { q:"Most serious food poisoning is-", options:[
+   "Shigella","Botulism","Staphylococci","Salmonellae"
+ ], answer:"B"},
+ { q:"Causes of food Poisoning includes-", options:[
+   "Plants","Animals","Chemicals","All"
+ ], answer:"D"},
+ { q:"What are the causative agents of inflammatory diarrhoea?", options:[
+   "Shigella","Salmonella","E.coli","All"
+ ], answer:"D"}
+]
+
 };
 
 let quiz=[],index=0,score=0,answered=false;
